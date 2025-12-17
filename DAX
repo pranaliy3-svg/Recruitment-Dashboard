@@ -1,0 +1,43 @@
+
+CalendarTable = 
+ADDCOLUMNS(
+    CALENDAR(DATE(2020, 1, 1), DATE(2025, 12, 31)),
+    "Year", YEAR([Date]),
+    "MonthNumber", MONTH([Date]),
+    "Month Year", FORMAT([DATE],"MMM YYYY"),
+    "Month Name", FORMAT([Date], "MMM"),
+   "YearMonth", YEAR([Date]) * 100 + MONTH([Date]), 
+    "Quarter", QUARTER([Date]),
+    "Day", DAY([Date]),
+    "DayOfWeek", WEEKDAY([Date]),
+    "DayName", FORMAT([Date], "DDD"))
+
+
+
+Total Hired = CALCULATE(COUNTA(hrdata[OfferAccepted]),hrdata[OfferAccepted]="YES")
+
+Previous Month Hired = 
+CALCULATE(
+    COUNTROWS(hrdata),hrdata[OfferAccepted]="YES",
+    DATEADD('CalendarTable'[Date], -1, MONTH)
+
+)
+
+
+Offer Acceptance Rate = divide ( [Total Hired],[Offers Rolled out])
+
+Total recruitment cost = SUM(hrdata[CostToHire])
+
+Average time to fill = AVERAGEA(hrdata[TimeToHireDays])
+
+Mom hired% = DIVIDE([Current Month Hire]-[Previous Month Hired],[Previous Month Hired])
+
+Hired percentage = DIVIDE([Total Hired]-[Previous Month Hired],[Previous Month Hired])
+
+Shortlist = SUM(hrdata[Shortlist] )
+
+Previous month Shortlist = CALCULATE([Shortlist],PREVIOUSMONTH(CalendarTable[Date]))
+
+Shortlist Percentage = DIVIDE([Shortlist] -[Previous month Shortlist],[Previous month Shortlist])
+
+source by MID exp level = CALCULATE([Total Hired],hrdata[ExperienceLevel]="MID")
