@@ -1,0 +1,72 @@
+Recruitment Analytics Dashboard – End-to-End Case Study
+Project Overview
+
+This project showcases an end-to-end Recruitment Analytics case study designed to analyze hiring performance across the complete talent acquisition lifecycle. The objective is to transform recruitment data into actionable insights using interactive dashboards.
+
+The project is divided into three interconnected dashboards, each answering a different business question.
+
+Dashboards Included
+1. Overview Dashboard
+
+Provides a high-level snapshot of recruitment performance, including:
+
+Total openings, applications, shortlists, offers, and hires
+
+Funnel conversion rates and offer acceptance
+
+Average time to fill and cost per hire
+
+Focus: Identifying overall hiring efficiency and major drop-offs in the recruitment funnel.
+
+2. Hiring Efficiency Dashboard
+
+Analyzes how efficiently hiring is executed across sources, recruiters, and experience levels:
+
+Source effectiveness by experience level
+
+Recruiter-wise performance and drop-offs
+
+Role-wise cost and time-to-fill comparison
+
+Focus: Understanding where hiring slows down and which channels perform best.
+
+3. Hiring Details Dashboard
+
+Deep-dives into granular hiring metrics:
+
+Department-wise and role-wise hiring cost
+
+Month-on-month hiring trends and volatility
+
+Interview-to-offer and offer-to-hire conversions
+
+Focus: Identifying cost drivers, planning gaps, and funnel inefficiencies.
+
+Key Insights
+
+High application volumes do not always translate into high hires
+
+Senior-level roles significantly increase cost and time to hire
+
+Hiring performance varies widely by source, recruiter, and role
+
+Reactive hiring patterns lead to volatility in monthly outcomes
+
+Tools & Skills Used
+
+Power BI
+
+Data Modeling
+
+DAX
+
+Recruitment Metrics & KPIs
+
+Data Visualization & Analytical Thinking
+
+
+Disclaimer
+
+All data used in this project is dummy / simulated data created purely for learning and portfolio purposes.
+No real company data, authority data, or copyrighted data has been used.
+
